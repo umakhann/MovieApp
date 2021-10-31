@@ -6,7 +6,7 @@ An app to get information about movies.
 # Application Features
 - Search for movies;
 - Get information about movies;
-- Bookmark favorite books;
+- Bookmark favorite ones;
 - Dark/Light mode theme.
 
 
