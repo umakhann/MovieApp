@@ -1,4 +1,4 @@
-# About Comics
+# About Movies App
 An app to get information about movies.
 
 
