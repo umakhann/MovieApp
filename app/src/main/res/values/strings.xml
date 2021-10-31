@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">MovieApp</string>
+    <string name="shorts">Short Text</string>
+    <string name="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt sagittis tortor id sodales. Nam sit amet venenatis metus. Duis quis risus non est lacinia suscipit at ac nibh. Suspendisse sapien augue, cursus quis egestas ut, aliquam ut lorem. Morbi aliquet mauris vitae leo porta tincidunt. Cras dapibus, erat et placerat cursus, lorem turpis ultrices ante, et faucibus mauris ipsum eu massa. Pellentesque volutpat ut est nec congue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque placerat, neque vel mattis elementum, massa magna interdum libero, et aliquet felis diam vel ligula.</string>
+
+</resources>

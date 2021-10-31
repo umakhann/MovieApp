@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="colorBackground" format="color" />
+    <attr name="colorOfSimpleText" format="color" />
+    <attr name="iconColor" format="color" />
+    <attr name="headerColor" format="color" />
+
+
+
+</resources>

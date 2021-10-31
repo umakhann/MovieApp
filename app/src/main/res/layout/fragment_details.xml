@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".ui.fragments.details.DetailsFragment"
+    >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/edge1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        android:layout_marginTop="-60dp"
+        android:layout_marginStart="-180dp"
+
+        />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/edge3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        android:layout_marginTop="-260dp"
+        android:layout_marginEnd="-180dp"
+
+        />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/details_back"
+        android:elevation="0dp"
+        app:cardElevation="0dp"
+        app:cardCornerRadius="15dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="33dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/arrow_icon" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/bookmark"
+        android:elevation="0dp"
+        app:cardElevation="0dp"
+        app:cardCornerRadius="15dp"
+
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/bookmark" />
+    </androidx.cardview.widget.CardView>
+
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="0dp"
+
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/details_back"
+        app:layout_constraintVertical_bias="0.0">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/more_book_image"
+                android:layout_width="170dp"
+                android:layout_height="260dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="11dp"
+                app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/director"
+                tools:srcCompat="@drawable/book3" />
+
+            <TextView
+                android:id="@+id/more_title"
+                style="@style/header_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginStart="16dp"
+
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/quando"
+
+                android:marqueeRepeatLimit="1"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Day Four" />
+
+
+            <TextView
+                android:id="@+id/director"
+                style="@style/book_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginStart="16dp"
+                android:ellipsize="end"
+
+                android:fontFamily="@font/quando"
+                android:maxLines="1"
+                tools:text="Ultimate Spider-Man (2000 - 2009)"
+                android:textColor="?colorOfSimpleText"
+                app:layout_constraintBottom_toTopOf="@+id/more_book_image"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/more_title"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/running_time"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="16dp"
+                style="@style/simple_text"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/box_office"
+                app:layout_constraintStart_toEndOf="@+id/more_book_image"
+                tools:text="Price:\n$20.00" />
+
+            <TextView
+                android:id="@+id/genre"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="15dp"
+                android:textStyle="bold"
+                style="@style/simple_text"
+                app:layout_constraintBottom_toTopOf="@+id/running_time"
+                app:layout_constraintStart_toEndOf="@+id/more_book_image"
+                tools:text="Published:\nJune 10, 2012" />
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="17dp"
+                android:layout_marginBottom="13dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/genre"
+                app:layout_constraintStart_toEndOf="@+id/more_book_image"
+                app:layout_constraintTop_toBottomOf="@+id/director"
+                tools:text="Published:\nJune 10, 2012"
+                style="@style/simple_text" />
+
+            <TextView
+                android:id="@+id/box_office"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="16dp"
+                style="@style/simple_text"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/characters_list"
+                app:layout_constraintStart_toEndOf="@+id/more_book_image"
+                tools:text="Page Count:\n102" />
+
+            <LinearLayout
+                android:id="@+id/characters_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                tools:visibility="visible"
+
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/aa_linear_background"
+                android:elevation="0dp"
+                android:orientation="horizontal"
+                android:outlineAmbientShadowColor="@android:color/transparent"
+                android:padding="5dp"
+                app:layout_constraintStart_toEndOf="@+id/more_book_image"
+                app:layout_constraintTop_toBottomOf="@+id/box_office">
+
+
+                <ImageView
+                    android:id="@+id/star"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="4dp"
+
+                    app:srcCompat="@drawable/star_selected" />
+
+                <TextView
+                    android:id="@+id/imdb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="1dp"
+                    android:fontFamily="@font/quando"
+                    android:textColor="@color/white"
+                    android:textSize="12dp"
+                    tools:text="8.8/10" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/more_book_image">
+
+                <TextView
+                    android:id="@+id/description_rec_header"
+                    style="@style/header_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="25dp"
+
+                    android:layout_marginTop="40dp"
+
+                    android:fontFamily="@font/quando"
+                    android:text="Description"
+                    android:visibility="invisible"/>
+
+
+                <TextView
+                    android:id="@+id/description"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+
+                    android:fontFamily="@font/quando"
+
+                    android:padding="24dp"
+                    style="@style/simple_text"
+                    tools:text="ExampleText"
+
+                    />
+
+                <TextView
+                    android:id="@+id/actors"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+
+                    android:fontFamily="@font/quando"
+
+                    android:paddingStart="24dp"
+                    android:paddingTop="16dp"
+                    android:paddingEnd="24dp"
+                    android:paddingBottom="16dp"
+                    style="@style/simple_text"
+                    tools:text="Starring: James Franco"
+
+                    />
+
+                <TextView
+                    android:id="@+id/writers"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+
+                    android:fontFamily="@font/quando"
+
+                    android:paddingStart="24dp"
+                    android:paddingTop="8dp"
+                    android:paddingEnd="24dp"
+                    android:paddingBottom="16dp"
+                    style="@style/simple_text"
+
+                    tools:text="Writers: Chuck Palahniuk"
+
+                    />
+
+                <TextView
+                    android:id="@+id/awards"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+
+                    android:paddingStart="24dp"
+                    android:paddingTop="8dp"
+                    android:paddingEnd="24dp"
+                    android:paddingBottom="16dp"
+                    style="@style/simple_text"
+
+                    tools:text="Awards: No award"
+
+                    />
+
+            </LinearLayout>
+
+
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+
+                android:layout_marginBottom="268dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

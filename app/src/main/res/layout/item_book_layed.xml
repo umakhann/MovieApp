@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    app:cardCornerRadius="12dp"
+    android:elevation="0dp"
+    android:layout_margin="4dp">
+
+
+    <ImageView
+        android:id="@+id/layed_image"
+        android:layout_width="42dp"
+        android:layout_height="70dp"
+        app:srcCompat="@drawable/book2"
+        android:layout_marginLeft="24dp"
+        android:layout_gravity="center_vertical"
+
+        />
+
+    <TextView
+        android:id="@+id/layed_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lorem Ipsum Dolores"
+
+        android:layout_marginLeft="88dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+
+        style="@style/book_title"
+
+        android:ellipsize="end"
+        android:maxLines="1"
+
+        />
+
+    <TextView
+        android:id="@+id/layed_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lorem Ipsum"
+        android:textColor="#3944bc"
+        android:layout_marginLeft="88dp"
+        android:layout_marginTop="36dp"
+        style="@style/book_name"
+        />
+
+    <LinearLayout
+        android:id="@+id/layed_stars"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+
+        android:backgroundTint="@android:color/transparent"
+        android:layout_marginLeft="88dp"
+        android:layout_marginTop="56dp"
+
+        android:elevation="0dp"
+        android:outlineAmbientShadowColor="@android:color/transparent">
+
+
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:id="@+id/star"
+            android:layout_margin="4dp"
+            android:layout_gravity="center_vertical"
+
+            app:srcCompat="@drawable/star_selected" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imdb"
+            android:layout_margin="1dp"
+            tools:text = "8.8/10"
+            android:textSize="12dp"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/quando"/>
+
+
+
+
+    </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>
