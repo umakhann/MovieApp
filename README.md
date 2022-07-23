@@ -25,7 +25,7 @@ An app to get information about movies.
 
 
 # Architecture
-- MVVM with View Binding
+- MVVM
 
 
 # Shots of the Application
